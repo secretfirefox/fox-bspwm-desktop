@@ -18,6 +18,15 @@ sudo pacman -S pcmanfm galculator lxappearance leafpad gpicview xarchiver --noco
 
 #sudo pacman -S fastfetch htop ibus ibus-anthy numlockx git go base-devel 7zip virt-manager qemu-full kwallet flatpak gimp --noconfirm --needed
 
+# Install yay 
+
+sudo pacman -S git go base-devel --noconfirm --needed
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ..
+rm -rf yay
+
 # Create directories
 
 mkdir ~/.config

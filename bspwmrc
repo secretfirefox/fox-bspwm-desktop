@@ -28,6 +28,7 @@ polybar &
 xinput set-prop 8 'libinput Accel Speed' -0.7 &
 xsetroot -cursor_name left_ptr &
 lxpolkit &
+xset -dpms s off &
 
 # fox bspwm settings
 

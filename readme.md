@@ -6,7 +6,7 @@ Particularly, I want to make something using bspwm, something that looks nice an
 
 Updating regularly as much as I have time! 
 
-# What to expect:
+# What to expect
 
 - A clean working environment;
 
