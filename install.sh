@@ -8,7 +8,7 @@ sudo pacman -Syu
 
 # Install core packages
 
-sudo pacman -S xorg xorg-xsetroot xorg-xinit xorg-xrandr bspwm sxhkd kitty polybar feh ttf-fira-sans ttf-fira-mono rofi nano xdg-user-dirs xdg-user-dirs-gtk xdg-desktop-portal xdg-desktop-portal-gtk maim xclip polkit lxsession ffmpegthumbnailer noto-fonts-cjk noto-fonts-emoji --noconfirm --needed
+sudo pacman -S xorg xorg-xsetroot xorg-xinit xorg-xrandr bspwm sxhkd kitty polybar feh ttf-fira-sans ttf-fira-mono rofi nano xdg-user-dirs xdg-user-dirs-gtk xdg-desktop-portal xdg-desktop-portal-gtk maim xclip polkit lxsession ffmpegthumbnailer noto-fonts-cjk noto-fonts-emoji picom --noconfirm --needed
 
 # Install convenient packages
 
@@ -24,12 +24,17 @@ mkdir ~/.config
 
 # Copy files
 
-cp -r bspwm/ sxhkd/ kitty/ ~/.config/
+cp -r bspwmrc ~/.config/bspwm/ 
+cp -r sxhkdrc ~/.config/sxhkd/
+cp -r kitty.conf ~/.config/kitty/
+cp -r picom.conf ~/.config/picom/
+cp -r config.ini ~/.config/polybar/  
 cp -r .fehbg ~/
 
 # Authorize files
 
 sudo chmod +x ~/.config/bspwm/bspwmrc
 sudo chmod +x ~/.config/sxhkd/sxhkdrc 
+sudo chmod +x ~/.fehbg
 
 #
