@@ -25,6 +25,7 @@ mkdir ~/.config
 # Copy files
 
 cp -r bspwm/ sxhkd/ kitty/ ~/.config/
+cp -r .fehbg ~/
 
 # Authorize files
 
