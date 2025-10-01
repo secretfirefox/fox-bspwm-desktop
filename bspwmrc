@@ -22,7 +22,7 @@ bspc config gapless_monocle      true
 xrandr --output DP-1 --mode 1920x1080 --refresh 120
 #ibus-daemon -d -r -x &
 numlockx &
-picom --backend glx --vsync --blur-method gaussian --blur-size 7 --blur-strength 7 --blur-deviation 7 &
+picom --backend glx --vsync --blur-method gaussian --blur-size 16 --blur-deviation 8 &
 polybar &
 ~/.fehbg &
 xinput set-prop 8 'libinput Accel Speed' -0.7 &
