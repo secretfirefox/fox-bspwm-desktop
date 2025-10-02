@@ -35,6 +35,7 @@ mkdir ~/.config/sxhkd/
 mkdir ~/.config/kitty/
 mkdir ~/.config/picom/
 mkdir ~/.config/polybar/
+mkdir ~/.config/xsettingsd/
 
 # Copy files
 
