@@ -8,11 +8,11 @@ sudo pacman -Syu
 
 # Install core packages
 
-sudo pacman -S xorg xorg-xsetroot xorg-xinit xorg-xrandr bspwm sxhkd kitty polybar feh ttf-fira-sans ttf-fira-mono rofi nano xdg-user-dirs xdg-user-dirs-gtk xdg-desktop-portal xdg-desktop-portal-gtk maim xclip polkit lxsession ffmpegthumbnailer noto-fonts-cjk noto-fonts-emoji picom --noconfirm --needed
+sudo pacman -S xorg xorg-xsetroot xorg-xinit xorg-xrandr bspwm sxhkd kitty polybar feh ttf-fira-sans ttf-fira-mono rofi nano xdg-user-dirs xdg-user-dirs-gtk xdg-desktop-portal xdg-desktop-portal-gtk maim xclip polkit lxsession ffmpegthumbnailer noto-fonts-cjk noto-fonts-emoji picom dunst xsettingsd --noconfirm --needed
 
 # Install convenient packages
 
-sudo pacman -S pcmanfm galculator lxappearance leafpad gpicview xarchiver --noconfirm --needed
+sudo pacman -S pcmanfm galculator lxappearance leafpad gpicview xarchiver pavucontrol lxtask  lxmusic --noconfirm --needed
 
 # Install extra packages
 
@@ -29,9 +29,16 @@ rm -rf yay
 
 # Create directories
 
-mkdir ~/.config
+mkdir ~/.config/
+mkdir ~/.config/bspwm/
+mkdir ~/.config/sxhkd/
+mkdir ~/.config/kitty/
+mkdir ~/.config/picom/
+mkdir ~/.config/polybar/
 
 # Copy files
+
+cp -r bspwmrc sxhkdrc kitty.conf ~/.config/bspwm
 
 cp -r bspwmrc ~/.config/bspwm/ 
 cp -r sxhkdrc ~/.config/sxhkd/
