@@ -39,8 +39,6 @@ mkdir ~/.config/xsettingsd/
 
 # Copy files
 
-cp -r bspwmrc sxhkdrc kitty.conf ~/.config/bspwm
-
 cp -r bspwmrc ~/.config/bspwm/ 
 cp -r sxhkdrc ~/.config/sxhkd/
 cp -r kitty.conf ~/.config/kitty/
