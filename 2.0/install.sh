@@ -46,6 +46,7 @@ cp -r kitty.conf ~/.config/kitty/
 cp -r picom.conf ~/.config/picom/
 cp -r config.ini ~/.config/polybar/  
 cp -r .fehbg ~/
+cp -r .xinitrc ~/
 
 # Authorize files
 
