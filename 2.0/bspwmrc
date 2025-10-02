@@ -32,8 +32,8 @@ bspc config pointer_motion_interval 1 # fixes lagginess when dragging windows ar
 # Fox Autostart Section # 
 
 killall -9 xsettingsd sxhkd dunst ksuperkey bspc # resets running services/applications from former sessions
-xsettingsd --config="$BSPDIR"/xsettingds & # launches xsettingsd daemon
-sxhkd -c "$BSPDIR"/sxhkdrc & # launches the keybinds daemon
+xsettingsd --config=~/.config/xsettingsd & # launches xsettingsd daemon
+pgrep -x sxhkd > /dev/null || sxhkd & # starts sxhkd keybind daemon # launches the keybinds daemon
 xsetroot -cursor_name left_ptr & # changes from the default x cursor to the one chosen by the user
 bash ~/.fehbg # restores the defined wallpaper
 dunst & # starts the notification daemon
