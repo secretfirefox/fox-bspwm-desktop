@@ -38,7 +38,7 @@ xsetroot -cursor_name left_ptr & # changes from the default x cursor to the one 
 ~/.fehbg & # restores the defined wallpaper
 dunst & # starts the notification daemon
 numlockx & # turns on numpad at startup
-picom --backend gl --vsync --blur-method gaussian --blur-size 16 --blur-deviation 8 # enables compositing, vsync and blur
+picom --backend glx --vsync --blur-method gaussian --blur-size 16 --blur-deviation 8 # enables compositing, vsync and blur
 polybar & # launches polybar
 xinput set-prop 8 'libinput Accel Speed' -0.8 & # lowers mouse speed so it is actually usable
 xset -dpms s off & # disables powersaving so screen doesn't blank, and computer doesn't turn off
